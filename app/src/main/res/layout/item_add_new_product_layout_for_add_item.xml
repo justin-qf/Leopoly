@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rowIndex">
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:maxWidth="@dimen/_40sdp"
+        android:minWidth="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/actionEdit"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_edit"
+            app:tint="@android:color/holo_green_dark" />
+
+        <ImageView
+            android:id="@+id/actionDelete"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_cancel"
+            app:tint="@android:color/holo_red_dark" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/columnOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:fontFamily="@font/muli_regular"
+        android:hint="@string/not_filled"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/columnSecond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:fontFamily="@font/muli_regular"
+        android:hint="@string/not_filled"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/columnThree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:fontFamily="@font/muli_regular"
+        android:hint="@string/not_filled"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/columnfifth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:fontFamily="@font/muli_regular"
+        android:hint="@string/not_filled"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp" />
+
+</TableRow>

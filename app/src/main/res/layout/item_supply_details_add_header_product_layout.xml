@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/columnOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:fontFamily="@font/muli_regular"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="INV NO /\nDATE"
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/columnSecond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+
+        android:fontFamily="@font/muli_regular"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="INV\nAMOUNT/\nDAY(OS)"
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/columnThree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+
+        android:fontFamily="@font/muli_regular"
+        android:maxWidth="@dimen/_80sdp"
+        android:minWidth="@dimen/_80sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="DOC DETAIL /\nTRACK LINK"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/columnLrNo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+
+        android:fontFamily="@font/muli_regular"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="LR No."
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/columnLrDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:fontFamily="@font/muli_regular"
+
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="LR Date."
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/columnTransport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+
+        android:fontFamily="@font/muli_regular"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="Transport"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/columnParcel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:fontFamily="@font/muli_regular"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="Parcel"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp" />
+</TableRow>

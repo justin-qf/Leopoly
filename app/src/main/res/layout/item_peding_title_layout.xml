@@ -1,0 +1,56 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:padding="@dimen/_5sdp"
+        android:maxWidth="@dimen/_91sdp"
+        android:minWidth="@dimen/_91sdp"         android:background="@drawable/outline_white_ract"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/muli_bold"
+        android:textSize="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="PRODUCT\nNAME"
+        />
+    <TextView
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/outline_white_ract"
+        android:maxWidth="@dimen/_91sdp"
+        android:minWidth="@dimen/_91sdp"         android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/muli_bold"
+        android:textSize="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="QUANTITY"
+        />
+    <TextView
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/outline_white_ract"
+        android:maxWidth="@dimen/_91sdp"
+        android:minWidth="@dimen/_91sdp"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/muli_bold"
+        android:textSize="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="UNIT"
+        />
+    <!--    <TextView
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/outline_white_ract"
+            android:maxWidth="@dimen/_70sdp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/muli_bold"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ACTION"
+            />
+-->
+</TableRow>

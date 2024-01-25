@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    android:id="@+id/rowIndex"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        android:maxWidth="@dimen/_40sdp"
+        android:minWidth="@dimen/_40sdp"
+        android:background="@drawable/outline_white_ract"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/actionEdit"
+            android:layout_gravity="center_horizontal"
+            android:tint="@android:color/holo_green_dark"
+            android:src="@drawable/ic_edit"
+            android:layout_width="@dimen/_24sdp"
+            android:padding="@dimen/_4sdp"
+            android:layout_height="@dimen/_24sdp"/>
+
+        <ImageView
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/actionDelete"
+            android:layout_gravity="center_horizontal"
+            android:tint="@android:color/holo_red_dark"
+            android:src="@drawable/ic_cancel"
+            android:padding="@dimen/_4sdp"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"/>
+    </LinearLayout>
+
+
+
+<TextView
+    android:id="@+id/ProductName"
+    android:maxWidth="@dimen/_70sdp"
+    android:minWidth="@dimen/_70sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+       android:hint="@string/not_filled"
+/>
+<TextView
+    android:id="@+id/qty1"
+    android:maxWidth="@dimen/_70sdp"
+    android:minWidth="@dimen/_70sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+       android:hint="@string/not_filled"
+/>
+<TextView
+    android:id="@+id/qty2"
+    android:maxWidth="@dimen/_70sdp"
+    android:minWidth="@dimen/_70sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_12sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+       android:hint="@string/not_filled"
+/>
+
+    <TextView
+        android:id="@+id/prefQty"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:background="@drawable/outline_white_ract"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:fontFamily="@font/muli_regular"
+        android:textSize="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+           android:hint="@string/not_filled"
+    />
+
+
+    <TextView
+        android:id="@+id/alertnativeForQty1"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:background="@drawable/outline_white_ract"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:fontFamily="@font/muli_regular"
+        android:textSize="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="@string/not_filled"
+        />
+    <TextView
+        android:id="@+id/alertnativeForQty2"
+        android:maxWidth="@dimen/_70sdp"
+        android:minWidth="@dimen/_70sdp"
+        android:background="@drawable/outline_white_ract"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:fontFamily="@font/muli_regular"
+        android:textSize="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="@string/not_filled"
+        />
+</TableRow>

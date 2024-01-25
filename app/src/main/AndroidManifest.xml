@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:name=".common.LeoPolyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="33">
+        <activity
+            android:name=".activity.SalesOrderSlipUpdate.PackageSlipListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BarcodeScannerActivity.BarcodeScannerActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.SalesOrderActivity.SalesOrderInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SalesOrderActivity.SalesOrderDetailActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SalesOrderActivity.SalesOrderActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderDetailListActivity"
+            android:exported="false"
+            android:resizeableActivity="false" />
+        <activity
+            android:name=".activity.PackageSlipEntryActivity.PackingSlipEntryActivity"
+            android:exported="false"
+            android:resizeableActivity="false" />
+        <activity
+            android:name=".activity.ScannerActivity.ScannerActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activity.PaymentActivity.PaymentActivity"
+            android:exported="false"
+            android:resizeableActivity="false" />
+        <activity
+            android:name=".activity.RequestActivity.OtherRequestActivity"
+            android:exported="false"
+            android:resizeableActivity="false" />
+        <activity
+            android:name=".activity.SupplyActivity.SupplyTypeActivity"
+            android:exported="false"
+            android:resizeableActivity="false" />
+        <activity
+            android:name=".activity.SupplyActivity.SupplyActivity"
+            android:exported="false"
+            android:resizeableActivity="false" />
+        <activity
+            android:name=".activity.PasswordActivity.NewPasswordActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VerificationActivity.VerificationActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PasswordActivity.ChangePasswordActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderActivity.OrderFormActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PasswordActivity.ForgotPasswordActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeActivity.DashboardActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity.LoginActivity"
+            android:exported="false"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashScreen.SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

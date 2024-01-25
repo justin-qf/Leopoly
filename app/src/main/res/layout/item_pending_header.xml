@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:fontFamily="@font/muli_bold"
+        android:maxWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="ORDER NO"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/outline_white_ract"
+        android:fontFamily="@font/muli_bold"
+        android:maxWidth="@dimen/_70sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="DATE"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_10sdp" />
+
+</TableRow>

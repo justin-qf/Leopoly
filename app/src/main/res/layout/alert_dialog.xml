@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingTop="@dimen/_45sdp"
+        android:paddingBottom="@dimen/_35sdp">
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_bold"
+            android:gravity="center"
+            android:text="Select Party"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+        <!--    android:src="@drawable/ic_close_black_24dp"-->
+        <ImageView
+            android:id="@+id/closeImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:padding="2dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchLayout"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/closeImage"
+            android:hint="">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText"
+                style="@style/textInputEditTextForMediumScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search hear.."
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        <EditText-->
+
+        <!--            android:id="@+id/editText"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/closeImage"-->
+        <!--            android:layout_marginTop="@dimen/_2sdp"-->
+        <!--            android:fontFamily="@font/muli_regular"-->
+        <!--            android:hint="Search here.."-->
+        <!--            android:paddingBottom="@dimen/_10sdp"-->
+        <!--            android:textColor="@color/colorBlack"-->
+        <!--            android:textSize="@dimen/_12sdp" />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/titleTxt"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@drawable/layout_background_shap"
+            android:textAlignment="center" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/closeText"
+            android:layout_below="@+id/searchLayout"
+            android:animateLayoutChanges="true"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:fontFamily="@font/muli_extra_old"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Empty Data"
+            android:textColor="@color/black_overlay"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/closeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:fontFamily="@font/muli_extra_old"
+            android:padding="@dimen/_5sdp"
+            android:text="Close"
+            android:textColor="@color/black_overlay"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

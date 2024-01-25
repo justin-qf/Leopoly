@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:id="@+id/columnOne"
+    android:maxWidth="@dimen/_70sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hint="@string/not_filled"
+    android:layout_weight="1"
+    android:text="" />
+<TextView
+    android:id="@+id/columnSecond"
+    android:maxWidth="@dimen/_70sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:hint="@string/not_filled"
+
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:text="" />
+<TextView
+    android:id="@+id/columnThree"
+    android:maxWidth="@dimen/_70sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_12sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hint="@string/not_filled"
+
+    android:layout_weight="1"
+    android:text="" />
+    <TextView
+        android:id="@+id/columnLrNo"
+        android:maxWidth="@dimen/_70sdp"
+        android:background="@drawable/outline_white_ract"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:fontFamily="@font/muli_regular"
+        android:textSize="@dimen/_10sdp"
+        android:hint="@string/not_filled"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="" />
+    <TextView
+        android:id="@+id/columnLrDate"
+        android:maxWidth="@dimen/_70sdp"
+        android:background="@drawable/outline_white_ract"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:fontFamily="@font/muli_regular"
+        android:textSize="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:hint="@string/not_filled"
+
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="" />
+    <TextView
+        android:id="@+id/columnTransport"
+        android:maxWidth="@dimen/_70sdp"
+        android:background="@drawable/outline_white_ract"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:fontFamily="@font/muli_regular"
+        android:textSize="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="@string/not_filled"
+        />
+    <TextView
+        android:id="@+id/columnParcel"
+        android:maxWidth="@dimen/_70sdp"
+        android:background="@drawable/outline_white_ract"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:fontFamily="@font/muli_regular"
+        android:textSize="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="@string/not_filled"
+        />
+</TableRow>

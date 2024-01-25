@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">Leopoly</string>
+    <string name="please_enter_email">Please Enter Email</string>
+    <string name="tag_line">Add Calm\n&amp;\nColours to Life...</string>
+    <string name="enter_otp">Enter Otp</string>
+    <string name="didn_t_received_otp_resend">Didn\'t received OTP? Resend</string>
+    <string name="verify">Verify</string>
+    <string name="verification_Txt">Verification</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_the_new_password_we_will_reset_your_old_password_with_new_one">Enter the new password. we will reset your old password with new one</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_the_mobile_number_associated_with_your_account">Enter the mobile number associated with your account.</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="a_6_digit_otp_will_be_sent_to_verify_your_mobile_number">A 6-digit OTP will be sent to verify your mobile number</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="reset_password_Txt">Reset Password</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile_txt">Profile</string>
+    <string name="order_Txt">Order Entry</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="dispatch_details">Dispatch Details</string>
+    <string name="sales_order_update">Packing Slip update</string>
+    <string name="packagin_list">Packing Slip</string>
+    <string name="outstanding_txt">Outstanding</string>
+    <string name="add_products">Add Products</string>
+    <string name="username_error">Enter username</string>
+    <string name="select_file_type">Select product type</string>
+    <string name="enter_product_quantity">Enter product quantity</string>
+    <string name="choose_product_error">Choose Product</string>
+    <string name="order_preview_title">Order Preview</string>
+    <string name="pending_order_title">Pending Orders</string>
+    <string name="order_details_title">Order Details</string>
+    <string name="orderList_title">Order List</string>
+    <string name="add_discount_amount">Add discount amount</string>
+    <string name="party_request_title">Party Request</string>
+    <string name="submit_txt">Submit</string>
+    <string name="inv_no_error">Enter Invoice no.</string>
+    <string name="os_report_error">Enter OS Report</string>
+    <string name="from_date_error">Select From Date</string>
+    <string name="end_date_error">Select End Date</string>
+    <string name="dl_error">Enter DL</string>
+    <string name="address_error">Enter Address</string>
+    <string name="conact_error">Enter Contact Number</string>
+    <string name="email_error">Enter Email-Id</string>
+    <string name="invalid_mobile_error">Invalid mobile no.</string>
+    <string name="email_id_error">Invalid email id</string>
+    <string name="payment_details_title">Payment Details</string>
+    <string name="not_filled">Not Filled</string>
+
+    <!-- Login text-->
+    <string name="welcomeTxt">Welcome Back</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="password_hint">Enter Password</string>
+
+    <!-- Image text-->
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="choose">Choose</string>
+    <string name="chooseSource">Choose Source</string>
+    <string name="listEmpty">List Empty</string>
+    <string name="bearer">Bearer </string>
+
+    <!-- Logout text-->
+    <string name="loggedUser">Logged User</string>
+    <string name="delete">Delete</string>
+    <string name="logout">Logout</string>
+    <string name="progressTxt">Please Wait...</string>
+    <string name="packing">Packing</string>
+    <string name="cancelOrderTitle">Cancel Order</string>
+    <string name="logoutMessage">Are you sure you want to logout?</string>
+    <string name="itemQTYMessage">Total net weight is more then order quantity?</string>
+    <string name="itemMessage">Item not match with selected order item</string>
+    <string name="orderDiscardMessage">You have not added packing slip entry yet. This order will be discard. Are you sure to exit?</string>
+    <string name="cancelOrderMessage">Are you sure want to cancel order?</string>
+    <string name="get">GET</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="allow">Allow</string>
+    <string name="scanCode">Scan BAR Code</string>
+    <string name="turn_flash_on_off">Turn Flash On/Off</string>
+    <string name="name_error_msg">Enter First Name</string>
+    <string name="last_name_error_msg">Enter Last Name</string>
+    <string name="valid_email_error_msg">Please enter a valid email id</string>
+    <string name="valid_mobile_error_msg">Please enter a 10 Digit Number</string>
+    <!-- Scan text-->
+    <string name="scan_title">BAR CODE SCANNER</string>
+    <string name="code_scan_hint">Hover over the code to scan it</string>
+    <string name="scan_result">Scan Result</string>
+    <string name="copy">Copy</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="permissionTitle">Permission required</string>
+    <string name="openSetting">Open Settings</string>
+    <string name="permissionRequiredMsg">It looks like your privacy settings are preventing us from accessing your camera to do capture photo. You can fix this by doing the following:\n
+        1. Touch the Go button below to open the Settings app.\n
+        2. Turn the Camera on.\n
+        3. Open this app and try again.</string>
+
+    <string name="notificationPermissionRequiredMsg">It looks like your privacy settings are preventing us from accessing your notification. You can fix this by doing the following:\n
+        1. Touch the Go button below to open the Settings app.\n
+        2. Turn the Notification on.</string>
+    <!-- API Handling text-->
+    <string name="errorMessage">Something went wrong</string>
+    <string name="serverErrorMessage">Server Error</string>
+    <string name="notFound">Not Found</string>
+    <string name="order">Order</string>
+    <string name="login">Login</string>
+    <string name="signIn">Sign In</string>
+    <string name="packageTitle">Packing Slip</string>
+    <string name="orderDetail">Order Detail</string>
+    <string name="skip">Skip</string>
+    <string name="continues">Continue</string>
+    <string name="deleteMessage">Are you sure you want to delete this entry?</string>
+
+    <!--Internet Connection text-->
+    <string name="title">Connection Status</string>
+    <string name="connectionDescription">The Internet connection appears to be offline.</string>
+    <string name="noConnectionDescription">Please check your connection status and try again</string>
+    <string name="settings">Settings</string>
+
+    <!--Package Slip-->
+    <string name="size_error">Enter Size</string>
+    <string name="roll_no_error">Enter Role No</string>
+    <string name="box_error">Enter Box No</string>
+    <string name="total_box_error">Enter Total Box</string>
+    <string name="gross_error">Enter Gross WT No</string>
+    <string name="total_gross_error">Enter Total Gross WT</string>
+    <string name="netWT_error">Enter Net WT No</string>
+    <string name="total_netWT_error">Enter Total Net WT</string>
+    <string name="unit_error">Enter Unit</string>
+    <string name="remark_error">Enter Remarks</string>
+    <string name="packageSlipListTitle">Package Slip List</string>
+    <string name="salesOrderListTitle">Sales Order List</string>
+    <string name="exit">EXIT</string>
+    <string name="next">NEXT</string>
+    <string name="fetch">FETCH</string>
+    <string name="saveNList">SAVE &amp; LIST</string>
+    <string name="remarks">Remarks</string>
+    <string name="unit">Unit</string>
+    <string name="netWT">Net WT.</string>
+    <string name="totalBoxesWT">Total Boxes WT.</string>
+    <string name="boxes">Boxes</string>
+    <string name="totalGrossWT">Total Gross WT.</string>
+    <string name="grossWT">Gross WT</string>
+    <string name="rollNo">Roll No.</string>
+    <string name="size">Size</string>
+    <string name="lessWT">Less WT</string>
+
+    <!--Order-->
+    <string name="date_error">Select Date</string>
+    <string name="packing_Slip_error">Enter Packing Slip</string>
+    <string name="party_error">Enter Party</string>
+    <string name="sales_order_no_error">Select Order No</string>
+    <string name="purchase_order_no_error">Select Purchase Order No</string>
+    <string name="item_error">Select Item</string>
+    <string name="item_qty_error">Enter Item Qty</string>
+    <string name="itemQty">Item Qty</string>
+    <string name="item">Item</string>
+    <string name="itemDesc">Item Description</string>
+    <string name="party">Party</string>
+    <string name="packingSlipNo">Packing Slip No.</string>
+    <string name="date">Date</string>
+    <string name="submit">Submit</string>
+    <string name="purchaseOrderNo">Purchase Order No.</string>
+    <string name="salesOrderNo">Sales Order No.</string>
+    <string name="pleaseScanFirst">Please Scan First</string>
+
+    <!--Sales Order-->
+    <string name="salesOrderTitle">Sales Order</string>
+    <string name="soDate">S.O DATE</string>
+    <string name="soDateError">Select S.O DATE</string>
+    <string name="soNo">S.O No</string>
+    <string name="soNoError">Enter S.O No</string>
+    <string name="billTo">Bill To</string>
+    <string name="billToError">Enter Bill To</string>
+    <string name="shipTo">Ship To</string>
+    <string name="shipToError">Enter Ship To</string>
+    <string name="purOrder">Pur. Order No.</string>
+    <string name="purOrderError">Enter Pur. Order No.</string>
+    <string name="orderDate">Order Date</string>
+    <string name="orderDateError">Select Order Date</string>
+    <string name="transport">Transport</string>
+    <string name="transportError">Select Transport</string>
+    <string name="dueDays">Due Days</string>
+    <string name="dueDaysError">Enter Due Days</string>
+    <string name="destination">Destination</string>
+    <string name="destinationError">Enter Destination</string>
+    <string name="transportDialogTitle">Select Transport</string>
+    <string name="selectBillToDialogTitle">Select Bill To</string>
+    <string name="selectShipToDialogTitle">Select Ship To</string>
+    <string name="dialogTitleItem">Select Item</string>
+
+    <!--Sales Order Detail-->
+    <string name="salesOrderDetailTitle">Sales Order Detail</string>
+    <string name="salesOrderDetailInfoTitle">Sales Order Detail</string>
+    <string name="itemName">Item Name</string>
+    <string name="itemNameError">Enter Item Name</string>
+    <string name="lessWt">Less Wt</string>
+    <string name="packingError">Enter Packing</string>
+    <string name="lessWtError">Enter Less Wt</string>
+    <string name="qty">Qty</string>
+    <string name="qtyError">Enter Qty</string>
+    <string name="rate">Rate</string>
+    <string name="rateError">Enter Rate</string>
+    <string name="amount">Amount</string>
+    <string name="amountError">Enter Amount</string>
+    <string name="description">Description</string>
+    <string name="descriptionError">Enter Description</string>
+    <string name="grossAmount">Gross Amount</string>
+    <string name="grossAmountError">Enter Gross Amount</string>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:id="@+id/columnOne"
+    android:maxWidth="@dimen/_91sdp"
+    android:minWidth="@dimen/_91sdp"     android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+        android:hint="@string/not_filled"
+ />
+<TextView
+    android:id="@+id/columnSecond"
+    android:maxWidth="@dimen/_91sdp"
+    android:minWidth="@dimen/_91sdp"     android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+        android:hint="@string/not_filled"
+ />
+<TextView
+    android:id="@+id/columnThree"
+    android:maxWidth="@dimen/_91sdp"
+    android:minWidth="@dimen/_91sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_12sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+        android:hint="@string/not_filled"
+ />
+<!--   <RelativeLayout
+       android:gravity="center"
+       android:background="@drawable/outline_white_ract"
+       android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <ImageView
+         android:tint="@color/colorPrimary"
+          android:id="@+id/editAction"
+          android:layout_width="@dimen/_15sdp"
+          android:layout_height="@dimen/_15sdp"
+           android:src="@drawable/ic_pencil"/>
+   </RelativeLayout>-->
+
+</TableRow>

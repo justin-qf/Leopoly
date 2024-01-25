@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1068805128841",
+    "project_id": "leopoly-19c7e",
+    "storage_bucket": "leopoly-19c7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068805128841:android:931d4db1e089abc346fc58",
+        "android_client_info": {
+          "package_name": "com.app.leopoly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA5B1PrmS9cBg_Ozequ4-4KXMT537f2G4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

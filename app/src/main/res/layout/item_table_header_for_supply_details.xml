@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    >
+<TextView
+    android:padding="@dimen/_5sdp"
+    android:maxWidth="@dimen/_70sdp"
+    android:background="@drawable/outline_white_ract"
+    android:textAlignment="center"
+    android:textColor="@color/colorBlack"
+    android:fontFamily="@font/muli_bold"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:text="INV NO /\n DATE"
+    />
+<TextView
+    android:padding="@dimen/_5sdp"
+    android:background="@drawable/outline_white_ract"
+    android:maxWidth="@dimen/_70sdp"
+    android:textAlignment="center"
+    android:textColor="@color/colorBlack"
+    android:fontFamily="@font/muli_bold"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:text="INV\nAMOUNT /\n DAY(OS)"
+    />
+<TextView
+    android:padding="@dimen/_5sdp"
+    android:background="@drawable/outline_white_ract"
+    android:maxWidth="@dimen/_70sdp"
+    android:textAlignment="center"
+    android:textColor="@color/colorBlack"
+    android:fontFamily="@font/muli_bold"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:text="DOC DETAIL /\n TRACK LINK"
+    />
+</TableRow>

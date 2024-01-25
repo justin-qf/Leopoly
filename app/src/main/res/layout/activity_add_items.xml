@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddItemsActivity.AddItemsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle"
+        android:layout_height="@dimen/_80sdp"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_25sdp">
+
+            <ImageView
+                android:id="@+id/backIcons"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:src="@drawable/ic_back_icon" />
+
+            <TextView
+                android:id="@+id/titleToolbar"
+                style="@style/toolbarTextStyle"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_10sdp"
+         >
+        <LinearLayout
+            android:id="@+id/splitOrderDate"
+            android:weightSum="2"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:id="@+id/dateOneLayout"
+                    style="@style/LoginTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Schedule Date 1"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dateOneEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli_regular"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:imeOptions="actionDone"
+                        android:maxEms="13"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textSize="@dimen/_10sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:id="@+id/dateSecondLayout"
+                    style="@style/LoginTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Schedule Date 2"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dateSecondEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli_regular"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:imeOptions="actionDone"
+                        android:maxEms="13"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textSize="@dimen/_10sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/unitLayout"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:hint="Unit">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/unitSpinner"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:maxEms="13"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp" />
+           <!-- <AutoCompleteTextView
+                android:imeOptions="actionDone"
+                android:focusable="false"
+                android:clickable="true"
+                android:id="@+id/unitSpinner"
+                android:layout_width="match_parent"
+                android:maxEms="13"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_height="@dimen/_38sdp"/>-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+      <!--  <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/unitLayout"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose Product"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productEdt"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/dropdowm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:maxEms="13"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp" />
+        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/productLayout"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose Product"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productEdt"
+                android:focusable="false"
+                android:clickable="true"
+                android:drawableEnd="@drawable/dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:maxEms="13"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/quantityLayout"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/quantityEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:maxEms="13"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/splitOrderQTY"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:id="@+id/qtyOneLayout"
+                    style="@style/LoginTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Schedule Quantity 1"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/qtyOneEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli_regular"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:maxEms="13"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textSize="@dimen/_10sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:id="@+id/qtySecondLayout"
+                    style="@style/LoginTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Schedule Quantity 2"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/qtySecondEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli_regular"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:maxEms="13"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:textSize="@dimen/_10sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/discountLayout"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:hint="Discount"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/discountEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_regular"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:maxEms="13"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addProduct"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="end"
+
+            android:elevation="@dimen/_10sdp"
+            android:fontFamily="@font/muli_regular"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_11sdp"
+            app:cornerRadius="@dimen/_15sdp"
+            app:elevation="@dimen/_20sdp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_30sdp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/muli_bold"
+                android:text="Your Order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/header"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <HorizontalScrollView
+                android:visibility="visible"
+                android:id="@+id/disptchOrderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TableLayout
+                        android:id="@+id/productTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TableRow>
+                            <TextView
+                                android:maxWidth="@dimen/_40sdp"
+                                android:minWidth="@dimen/_40sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:background="@drawable/outline_white_ract"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:fontFamily="@font/muli_bold"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text=""
+                                />
+                            <TextView
+                                android:padding="@dimen/_5sdp"
+                                android:maxWidth="@dimen/_91sdp"
+                                android:minWidth="@dimen/_91sdp"
+
+                                android:background="@drawable/outline_white_ract"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:fontFamily="@font/muli_bold"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="PRODUCT"
+                                />
+
+                            <LinearLayout
+                                android:minWidth="@dimen/_91sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:background="@drawable/outline_white_ract"
+                                android:maxWidth="@dimen/_70sdp"
+                                android:orientation="vertical"
+                                 android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                 >
+                                <TextView
+                                     android:maxWidth="@dimen/_70sdp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:fontFamily="@font/muli_bold"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                     android:text="ORDER QTY"
+                                    />
+                                <TextView
+                                    android:id="@+id/unitTxt"
+                                      android:textAlignment="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:fontFamily="@font/muli_regular"
+                                    android:textSize="@dimen/_8sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    />
+                            </LinearLayout>
+
+
+
+                            <TextView
+                                android:minWidth="@dimen/_80sdp"
+
+                                android:padding="@dimen/_5sdp"
+                                android:background="@drawable/outline_white_ract"
+                                android:maxWidth="@dimen/_80sdp"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:fontFamily="@font/muli_bold"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="PREFERRED\nORD QTY"
+                                />
+
+
+                            <TextView
+                                android:minWidth="@dimen/_60sdp"
+                                android:id="@+id/productReverseType"
+                                android:padding="@dimen/_5sdp"
+                                android:background="@drawable/outline_white_ract"
+                                android:maxWidth="@dimen/_70sdp"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorBlack"
+                                android:fontFamily="@font/muli_bold"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="STRIP QTY"
+                                />
+
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ProgressBar
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"/>
+            </LinearLayout>
+        <!--    <TableLayout
+                android:id="@+id/productTable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+
+                        android:maxWidth="@dimen/_70sdp"
+                        android:background="@drawable/outline_white_ract"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/muli_bold"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="PRODUCT"
+                        />
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/outline_white_ract"
+                        android:maxWidth="@dimen/_70sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/muli_bold"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="ORDER QTY"
+                        />
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/outline_white_ract"
+                        android:maxWidth="@dimen/_70sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/muli_bold"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="PREFERED\nORD QTY"
+                        />
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/outline_white_ract"
+                        android:maxWidth="@dimen/_70sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/muli_bold"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="STRIP QTY"
+                        />
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:background="@drawable/outline_white_ract"
+                        android:maxWidth="@dimen/_70sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/muli_bold"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="BOX QTY"
+                        />
+                </TableRow>
+
+               &lt;!&ndash; <TableRow>
+                    <TextView
+                        android:maxWidth="@dimen/_70sdp"
+                        android:background="@drawable/outline_white_ract"
+                        android:padding="@dimen/_5sdp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/muli_regular"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="" />
+                    <TextView
+                        android:maxWidth="@dimen/_70sdp"
+                        android:background="@drawable/outline_white_ract"
+                        android:padding="@dimen/_5sdp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/muli_regular"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="" />
+                    <TextView
+                        android:maxWidth="@dimen/_70sdp"
+                        android:background="@drawable/outline_white_ract"
+                        android:padding="@dimen/_5sdp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/muli_regular"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="" />
+                </TableRow>&ndash;&gt;
+            </TableLayout>-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/btnSection"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="end"
+            android:weightSum="3"
+             android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <com.google.android.material.button.MaterialButton
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="end"
+                    android:id="@+id/partyUpdate"
+                    android:elevation="@dimen/_10sdp"
+                    android:fontFamily="@font/muli_regular"
+                    android:text="Edit"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_11sdp"
+                    app:cornerRadius="@dimen/_15sdp"
+                    app:elevation="@dimen/_20sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="end"
+                    android:id="@+id/previewOrder"
+                    android:elevation="@dimen/_10sdp"
+                    android:fontFamily="@font/muli_regular"
+                    android:text="Preview"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_11sdp"
+                    app:cornerRadius="@dimen/_15sdp"
+                    app:elevation="@dimen/_20sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/saveOrder"
+                     android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="end"
+                    android:elevation="@dimen/_10sdp"
+                    android:fontFamily="@font/muli_regular"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_11sdp"
+                    app:cornerRadius="@dimen/_15sdp"
+                    app:elevation="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/muli_bold"
+            android:text="Note: To update product details click on row of product.
+"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+</layout>

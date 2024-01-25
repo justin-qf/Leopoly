@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222955</color>
+    <color name="colorPrimary_two">#F1AE00</color>
+    <color name="transparent_color">#00017DFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="BlackColorSeconday">#D5000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="lightGray">#DDDFE1</color>
+    <color name="grayTextColor">#a8acaf</color>
+    <color name="shadow">#838383</color>
+    <color name="simmerColor">#CDCDCD</color>
+    <color name="colorPrimaryTransperent">#59017DFF</color>
+    <color name="colorTransperent">#00017DFF</color>
+    <color name="header">#F1F1F1</color>
+    <color name="green">#45bc4b</color>
+    <color name="blue">#3F52E4</color>
+    <color name="redColor">#FF0000</color>
+    <color name="iconBackgroundColor">#e7f2fb</color>
+    <color name="colorWarn">#FDE99A</color>
+    <color name="colorPrimaryBlueDark">#1e394c</color>
+    <color name="btnSecondary">#844fc1</color>
+    <color name="darkBlueSecondary">#1a237e</color>
+    <color name="store_bg">#DBE9FF</color>
+    <color name="colorDarkBlueTransparent">#751A237E</color>
+
+    <color name="colorPrimarySvg">#0185ff</color>
+    <color name="colorPrimarySecondaySvg">#0061b1</color>
+
+<!--    Tag line color-->
+    <color name="colorAdd">#423d56</color>
+    <color name="colorC">#d03d37</color>
+
+    <color name="colorO">#b33468</color>
+
+    <color name="colorl">#dd8325</color>
+    <color name="colorOo">#469f61</color>
+    <color name="colorU">#b33468</color>
+    <color name="colorR">#4aacc0</color>
+    <color name="colorS">#c0d90f</color>
+    <color name="colorAmp">#462e9c</color>
+    <color name="barcode_background">#99000000</color>
+
+    <color name="colorProgressBackground">#00000000</color>
+
+    <style name="progressStyles" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <color name="ic_launcher_background">#00AFEF</color>
+
+</resources>

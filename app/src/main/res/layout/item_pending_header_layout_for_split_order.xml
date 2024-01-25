@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:id="@+id/productTxt"
+    android:maxWidth="@dimen/_95sdp"
+    android:minWidth="@dimen/_95sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:text="PRODUCT\nNAME"
+
+
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+        android:hint="@string/not_filled"
+ />
+<TextView
+    android:id="@+id/qty1Txt"
+    android:maxWidth="@dimen/_100sdp"
+    android:minWidth="@dimen/_100sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Schedule\nOrder Qty 1"
+
+    android:layout_weight="1"
+        android:hint="@string/not_filled"
+ />
+<TextView
+    android:id="@+id/qty2xt"
+    android:maxWidth="@dimen/_95sdp"
+    android:minWidth="@dimen/_95sdp"
+    android:background="@drawable/outline_white_ract"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:fontFamily="@font/muli_regular"
+    android:textSize="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:text="Schedule\nOrder Qty 2"
+
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+        android:hint="@string/not_filled"
+ />
+    <TextView
+        android:id="@+id/unitTxt"
+        android:maxWidth="@dimen/_95sdp"
+        android:minWidth="@dimen/_95sdp"
+        android:text="UNIT"
+        android:background="@drawable/outline_white_ract"
+        android:padding="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:fontFamily="@font/muli_regular"
+        android:textSize="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="@string/not_filled"
+        />
+
+</TableRow>
