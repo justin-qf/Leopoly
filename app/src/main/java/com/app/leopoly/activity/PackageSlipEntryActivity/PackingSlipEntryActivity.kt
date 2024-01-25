@@ -509,9 +509,13 @@ class PackingSlipEntryActivity : BaseActivity(), View.OnClickListener {
                 }
             } catch (e: Exception) {
                 HELPER.print("Exception", e.printStackTrace().toString())
+                setWithClearText(false, true)
             }
         }
-        errorListener = Response.ErrorListener { obj: VolleyError -> obj.printStackTrace() }
+        errorListener = Response.ErrorListener { obj: VolleyError ->
+            obj.printStackTrace()
+            setWithClearText(false, true)
+        }
     }
 
     override fun onClick(view: View?) {
@@ -657,13 +661,22 @@ class PackingSlipEntryActivity : BaseActivity(), View.OnClickListener {
                 data["unit"] = binding!!.unitIdTxt.text.toString().trim()
                 data["remark"] = binding!!.remarkId.text.toString().trim()
 
-                if(prefManager.orderData!=null && prefManager.orderData!!.iNVID.toString().isNotEmpty() ){
-                    data["order_id"] =
-                       prefManager.orderData!!.iNVID.toString().trim()
-                }else{
+                //New Logic
+                if(isFromOrderListScreen==true){
                     data["order_id"] =
                         invId.toString()
+                }else {
+                    data["order_id"] =
+                        prefManager.orderData!!.iNVID.toString().trim()
                 }
+                //Old Logic
+//                if(prefManager.orderData!=null && prefManager.orderData!!.iNVID.toString().isNotEmpty() ){
+//                    data["order_id"] =
+//                       prefManager.orderData!!.iNVID.toString().trim()
+//                }else{
+//                    data["order_id"] =
+//                        invId.toString()
+//                }
 //                data["order_id"] =
 //                    invId.toString().ifEmpty { prefManager.orderData!!.iNVID.toString().trim() }
                 data["qr_scan_id"] = binding!!.scannerTxt.text.toString().ifEmpty { "" }

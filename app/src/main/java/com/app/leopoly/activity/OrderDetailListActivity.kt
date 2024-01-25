@@ -48,7 +48,6 @@ class OrderDetailListActivity : BaseActivity(), View.OnClickListener {
         binding!!.toolbar.title.setText(R.string.order_details_title)
         invId = intent.getStringExtra("invID")
         HELPER.print("INV_ID", invId.toString())
-        HELPER.print("INV_ID", invId.toString())
         getPackingDetails()
         deletePackingDetails()
     }

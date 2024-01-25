@@ -50,7 +50,6 @@ public abstract class BaseActivity extends AppCompatActivity implements Observer
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         act = this;
         staticAct = this;
         prefManager = new PrefManager(act);

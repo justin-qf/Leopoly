@@ -273,6 +273,7 @@ class OrderFormActivity : BaseActivity(), View.OnClickListener {
                         clickListener = {
                             val i = Intent(act, PackingSlipEntryActivity::class.java)
                             i.putExtra("isFromNextBtn", false)
+                            i.putExtra("isFromOrderListScreen", false)
                             i.putExtra("itemQTY", binding!!.itemQtyEdt.text.toString())
                             i.putExtra("itemName", binding!!.itemEdt.text.toString())
                             i.putExtra("itemDesc",  binding!!.itemDescEdt.text.toString())
