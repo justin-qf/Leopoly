@@ -504,7 +504,11 @@ class PackingSlipEntryActivity : BaseActivity(), View.OnClickListener {
                         orderResponse.message!!.ifEmpty { getString(R.string.serverErrorMessage) },
                         false,
                         clickListener = {
-                            act.onBackPressed()
+                            if (orderResponse.message!!.toString() == "This Data already added.!") {
+                                setWithClearText(false, true)
+                            } else {
+                                act.onBackPressed()
+                            }
                         })
                 }
             } catch (e: Exception) {
@@ -662,10 +666,10 @@ class PackingSlipEntryActivity : BaseActivity(), View.OnClickListener {
                 data["remark"] = binding!!.remarkId.text.toString().trim()
 
                 //New Logic
-                if(isFromOrderListScreen==true){
+                if (isFromOrderListScreen == true) {
                     data["order_id"] =
                         invId.toString()
-                }else {
+                } else {
                     data["order_id"] =
                         prefManager.orderData!!.iNVID.toString().trim()
                 }
@@ -685,7 +689,7 @@ class PackingSlipEntryActivity : BaseActivity(), View.OnClickListener {
                 data["ac_year_id"] = prefManager.loginData!!.accountYear!![0].aCID!!.toString()
                 // data["less_wt"] = // grosswt-lesswt
                 loaderModel!!.isLoading.value = true
-                HELPER.print("PACKING_SLIP_PASSING_DATA",gson.toJson(data))
+                HELPER.print("PACKING_SLIP_PASSING_DATA", gson.toJson(data))
                 MySingleton.getInstance(act)!!.getRequestQueue().cancelAll("addPackage")
                 ApiRequest.addPackageInfo(
                     act,
@@ -732,8 +736,8 @@ class PackingSlipEntryActivity : BaseActivity(), View.OnClickListener {
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if (isDataAdded != true) {
-            if(isFromOrderListScreen != true)
-            LeoPolyApp.instance!!.observer!!.value = Constant.OBSERVER_BACK_FROM_PACKAGE_SLIP
+            if (isFromOrderListScreen != true)
+                LeoPolyApp.instance!!.observer!!.value = Constant.OBSERVER_BACK_FROM_PACKAGE_SLIP
 //            if (isFromOrderListScreen == true) {
 //                if(prefManager.orderData!=null)
 //                prefManager.orderData!!.iNVID =

@@ -398,7 +398,7 @@ class PubFun {
                 } else {
                     //http://192.168.1.17/leopoly/api/
                     pref!!.ipAddress =
-                        "http://" + dialogPermission.holder!!.editText.text.toString() + Apis.DEVELOPMENT_DEBUG_URL
+                        "http://" + dialogPermission.holder!!.editText.text.toString() + Apis.DEVELOPMENT_LIVE_URL
 
                     HELPER.print("IPADDRESS", pref.ipAddress.toString())
                     dialogPermission.dismiss()
